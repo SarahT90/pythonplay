@@ -1,4 +1,4 @@
-# To adjust this code to YOUR city, simply change the city name and replace 'A1C 4H2' in URL with your postal/zip code or your city name.
+# To adjust this code to YOUR city, simply change the city= "name" and replace 'A1C 4H2' in URL with your postal/zip code or your city name.
 import requests
 
 city = "St. John's"
