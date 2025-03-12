@@ -1,3 +1,4 @@
+# To adjust this code to YOUR city, simply change the city name and replace 'A1C 4H2' in URL with your postal/zip code.
 import requests
 
 city = "St. John's"
@@ -10,7 +11,7 @@ temp = weather_json.get('current').get('temp_c')
 description = weather_json.get('current').get('condition').get('text')
 feels_like = weather_json.get('current').get('feelslike_c')
 
-print("The current weather in", city, "is", description, "and", temp, "C degrees.", "With windchill the temperature is", feels_like, "C degrees.")
+print("The current weather in", city, "is", description, "and", temp, "C degrees.", "But it feels like the temperature is", feels_like, "C degrees with windchill and/or humidity.")
 if (feels_like < 0):
     print("Stay warm out there!")
 if (temp > 15.0):
