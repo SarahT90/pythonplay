@@ -11,5 +11,7 @@ description = weather_json.get('current').get('condition').get('text')
 feels_like = weather_json.get('current').get('feelslike_c')
 
 print("The current weather in", city, "is", description, "and", temp, "C degrees.", "With windchill the temperature is", feels_like, "C degrees.")
-if (feels_like or temp < 0):
+if (feels_like < 0):
     print("Stay warm out there!")
+if (temp > 15.0):
+    print("It's a warm one!")
